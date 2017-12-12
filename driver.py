@@ -3,7 +3,7 @@ from edge import Edge
 from graph import Graph
 from stack import Stack
 
-
+# Our implementation of Depth-First-Search
 def dfs (v, visited):
 	if len(visited) == 0:
 		visited.append(v.source())
@@ -16,7 +16,7 @@ def dfs (v, visited):
 				dfs(i, visited)
 	return visited
 
-
+# Function that asks for the input file and buils the Graph
 def graphBuilder():
 	filename = input("Enter the name of your file (Must be present in current directory): ")
 	file = open(filename)
@@ -44,6 +44,8 @@ def graphBuilder():
 		myGraph.nodeList[origin_index].addEdge(myGraph.nodeList[origin_index], myGraph.nodeList[destination_index])
 	return myGraph
 
+# cyclicDFS implementation from the video tutorial
+# Source: https://www.youtube.com/watch?v=xHX6a7D2U-M
 def cyclicDFS(graph, start):
 	vertexList, edgeList = graph
 	visitedVertex = []
@@ -61,6 +63,7 @@ def cyclicDFS(graph, start):
 		visitedVertex.append(current)
 	return visitedVertex
 
+# Function which returns all the DFS node indices in all_visited list
 def checkCyclic(graph):
 
 	for i in graph.getNodes():
@@ -72,6 +75,7 @@ def checkCyclic(graph):
 
 	return isRepeated(all_visited)
 
+# Function which checks if there is repeated node in the DFS visited (Cyclic implementation)
 def isRepeated(c):
 	myset = set()
 	for i in c:
