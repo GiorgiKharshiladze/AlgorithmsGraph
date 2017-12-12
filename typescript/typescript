@@ -1,0 +1,261 @@
+Script started on Mon Dec 11 23:34:07 2017
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                ]2;giorgi@Giorgis-MacBook-Air: ~/GitHub/AlgorithmsGraph/typescript]1;..ph/typescript[0m[27m[24m[J[39m[0m[49m[40m [93mgiorgi@Giorgis-MacBook-Air [44m[30m [30m~/GitHub/AlgorithmsGraph/typescript [42m[34m [30m master ? [49m[32m[39m [K[168C[39m[0m[49m[30m[39m[40m[38;5;46m [38;5;46m✓[39m [39m[38;5;244m[39m[48;5;244m[30m 6822 [39m[37m[39m[47m[30m 23:34:10 [39m[00m[49m[190D[?1h=[?2004h[1m[31mc[0m[39m[90md typescript[39m[12D[0m[32mc[32md[39m[39m [39m[4m.[24m[90m.[39m[39m [39m [39m [39m [39m [39m [39m [39m [9D[4m.[39m[4m.[24m[?1l>[?2004l
+]2;cd ..]1;cd[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                ]2;giorgi@Giorgis-MacBook-Air: ~/GitHub/AlgorithmsGraph]1;..gorithmsGraph[0m[27m[24m[J[39m[0m[49m[40m [93mgiorgi@Giorgis-MacBook-Air [44m[30m [30m~/GitHub/AlgorithmsGraph [42m[34m [30m master ? [49m[32m[39m [K[179C[39m[0m[49m[30m[39m[40m[38;5;46m [38;5;46m✓[39m [39m[38;5;244m[39m[48;5;244m[30m 6823 [39m[37m[39m[47m[30m 23:34:12 [39m[00m[49m[201D[?1h=[?2004h[1m[31mp[0m[39m[90mython3 driver.py[39m[16D[1m[31mp[1m[31my[0m[39m[1m[31mp[1m[31my[1m[31mt[0m[39m[1m[31mt[1m[31mh[0m[39m[1m[31mh[1m[31mo[0m[39m[0m[32mp[0m[32my[0m[32mt[0m[32mh[0m[32mo[32mn[39m[32mn[32m3[39m[39m [39m[4md[24m[4md[39m[4mr[24m[4mr[39m[4mi[24m[4mi[39m[4mv[24m[4mv[39m[4me[24m[4me[39m[4mr[24m[4mr[39m[4m.[24m[4m.[39m[4mp[24m[4mp[39m[4my[24m[?1l>[?2004l
+]2;python3 driver.py]1;python3Enter the name of your file (Must be present in current directory): input/graphLarge1.in
+Read 99 cities and 282 edges
+ Connected Component 1 :
+     Outer_Banks,NC
+     Louisville,KY
+     Raleigh,NC
+     Mercer_County,NJ
+     Nassau_County,NY
+     Chicago,IL
+     Dallas,TX
+     Green_Bay,WI
+     Colorado_Springs,CO
+     Morris_County,NJ
+     Queens,NY
+     Bucks_County,PA
+     Eugene,OR
+     Westchester_County,NY
+     Bronx,NY
+     Ulster_County,NY
+     Charlotte,NC
+     Cumberland_County,NJ
+     Las_Vegas,NV
+     Salem_County,NJ
+     Cleveland,OH
+     Columbus,OH
+     Miami,FL
+     Tampa,FL
+     Jersey_City,NJ
+     Denver,CO
+     Ocean_County,NJ
+     Pittsburgh,PA
+     Sussex_County,DE
+     Phoenix,AZ
+     Fort_Worth,TX
+     Palm_Beach,FL
+     Austin,Texas
+     Houston,TX
+     Annapolis,MD
+     Oakland,CA
+     Washington,DC
+     Hudson_County,NJ
+     Richmond,IN
+     Williamsburg,VA
+     Baltimore,MD
+     Gloucester_County,NJ
+     Gwinnett_County,GA
+     Union_County,NJ
+     Philadelphia,PA
+     Staten_Island,NY
+     San_Diego,CA
+     Harrisburg,PA
+     Dutchess_County,NY
+     Passaic_County,NJ
+     Tacoma,WA
+     Memphis,TN
+     Boston,MA
+     Wilmington,DE
+     Santa_Barbara,CA
+     Monmouth_County,NJ
+     Lexington,KY
+     Cape_May_County,NJ
+     Albuquerque,NM
+     Cincinnati,OH
+     St._Louis,MO
+     St._Petersburg,FL
+     Los_Angeles,CA
+     Portland,OR
+     Sussex_County,NJ
+     New_Castle_County,DE
+     Oklahoma_City,OK
+     Omaha,NE
+     Medford,OR
+     Tucson,AZ
+     Rochester,NY
+     Nashville,TN
+     San_Francisco,CA
+     Patterson,NJ
+     Newark,NJ
+     Long_Island,NY
+     New_York_City,NY
+     Middlesex_County,NJ
+     Brooklyn,NY
+     New_Orleans,LA
+     Detroit,MI
+     Minneapolis,MN
+     Indianapolis,IN
+     Kansas_City,KS
+     Essex_County,NJ
+     Atlanta,GA,
+     Seattle,WA
+     Atlantic_City,NJ
+     Bergan_County,NJ
+     Corpus_Christi,TX
+     Milwaukee,WI
+     Hunterdon_County,NJ
+     Putnam_County,NY
+     Orlando,FL
+     Fort_Lauderdale,FL
+     San_Antonio,TX
+     Orange_County,NY
+     Buffalo,NY
+     Greenwich_Village,NY
+Graph contains a cycle
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                ]2;giorgi@Giorgis-MacBook-Air: ~/GitHub/AlgorithmsGraph]1;..gorithmsGraph[0m[27m[24m[J[39m[0m[49m[40m [93mgiorgi@Giorgis-MacBook-Air [44m[30m [30m~/GitHub/AlgorithmsGraph [42m[34m [30m master ? [49m[32m[39m [K[179C[39m[0m[49m[30m[39m[40m[38;5;46m [38;5;46m✓[39m [39m[38;5;244m[39m[48;5;244m[30m 6824 [39m[37m[39m[47m[30m 23:34:33 [39m[00m[49m[201D[?1h=[?2004h[32mpython3[39m [4mdriver.py[24m[?1l>[?2004l
+]2;python3 driver.py]1;python3Enter the name of your file (Must be present in current directory): input/g   Gr  t/graphMed2.in
+Read 87 cities and 110 edges
+ Connected Component 1 :
+     Indianapolis,IN
+     Bergan_County,NJ
+     Kansas_City,KS
+     Oklahoma_City,OK
+     Ocean_County,NJ
+     Eugene,OR
+     Miami,FL
+     Buffalo,NY
+     Santa_Barbara,CA
+     Tacoma,WA
+     Lexington,KY
+     Colorado_Springs,CO
+     Washington,DC
+     Harrisburg,PA
+     Richmond,IN
+     Omaha,NE
+     Outer_Banks,NC
+     Nashville,TN
+     Morris_County,NJ
+     Louisville,KY
+     Fort_Lauderdale,FL
+     Corpus_Christi,TX
+     Jersey_City,NJ
+     Hunterdon_County,NJ
+     Bucks_County,PA
+     New_Orleans,LA
+     Tampa,FL
+     Sussex_County,DE
+     Essex_County,NJ
+     Dutchess_County,NY
+     Mercer_County,NJ
+     Union_County,NJ
+     San_Antonio,TX
+     Philadelphia,PA
+     New_York_City,NY
+     Putnam_County,NY
+     Houston,TX
+     Williamsburg,VA
+     Gloucester_County,NJ
+     Atlantic_City,NJ
+     Long_Island,NY
+     Phoenix,AZ
+     Cleveland,OH
+     Bronx,NY
+     New_Castle_County,DE
+     Dallas,TX
+     Medford,OR
+     Chicago,IL
+     Sussex_County,NJ
+     Green_Bay,WI
+     Fort_Worth,TX
+     Seattle,WA
+     Raleigh,NC
+     Albuquerque,NM
+     Baltimore,MD
+     Salem_County,NJ
+     Monmouth_County,NJ
+     St._Petersburg,FL
+     Palm_Beach,FL
+     Detroit,MI
+     Annapolis,MD
+     Westchester_County,NY
+     Middlesex_County,NJ
+     Boston,MA
+     Cincinnati,OH
+     Wilmington,DE
+     Pittsburgh,PA
+     St._Louis,MO
+     Queens,NY
+     Greenwich_Village,NY
+     Nassau_County,NY
+     Passaic_County,NJ
+     Cape_May_County,NJ
+     San_Francisco,CA
+     Orange_County,NY
+     Minneapolis,MN
+     Patterson,NJ
+     Columbus,OH
+     Oakland,CA
+     Los_Angeles,CA
+     Newark,NJ
+     Las_Vegas,NV
+ Connected Component 2 :
+     Brooklyn,NY
+     Tucson,AZ
+     Gwinnett_County,GA
+ Connected Component 3 :
+     Charlotte,NC
+     Cumberland_County,NJ
+Graph contains a cycle
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                ]2;giorgi@Giorgis-MacBook-Air: ~/GitHub/AlgorithmsGraph]1;..gorithmsGraph[0m[27m[24m[J[39m[0m[49m[40m [93mgiorgi@Giorgis-MacBook-Air [44m[30m [30m~/GitHub/AlgorithmsGraph [42m[34m [30m master ? [49m[32m[39m [K[179C[39m[0m[49m[30m[39m[40m[38;5;46m [38;5;46m✓[39m [39m[38;5;244m[39m[48;5;244m[30m 6824 [39m[37m[39m[47m[30m 23:34:51 [39m[00m[49m[201D[?1h=[?2004h[32mpython3[39m [4mdriver.py[24m[?1l>[?2004l
+]2;python3 driver.py]1;python3Enter the name of your file (Must be present in current directory): o input/graphOnelin  /  .in
+Read 10 cities and 13 edges
+ Connected Component 1 :
+     one
+     three
+     nine
+     five
+     six
+     two
+     four
+     eight
+     ten
+     seven
+Graph contains a cycle
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                ]2;giorgi@Giorgis-MacBook-Air: ~/GitHub/AlgorithmsGraph]1;..gorithmsGraph[0m[27m[24m[J[39m[0m[49m[40m [93mgiorgi@Giorgis-MacBook-Air [44m[30m [30m~/GitHub/AlgorithmsGraph [42m[34m [30m master ? [49m[32m[39m [K[179C[39m[0m[49m[30m[39m[40m[38;5;46m [38;5;46m✓[39m [39m[38;5;244m[39m[48;5;244m[30m 6824 [39m[37m[39m[47m[30m 23:35:05 [39m[00m[49m[201D[?1h=[?2004h[4mi[24m[90mpconfig[39m[4mi[39m[4mn[24m[90ms[90mt[90ma[90ml[90ml[90m [90mflask requests[39m[20D[4mi[4mn[39m[4mp[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [19D[4mp[4mu[24m[4mu[4mt[24m[4mt[4m/[24m[4m/[4mg[24m[4mg[4mr[24m[4mr[4ma[24m[4ma[4mp[24m[4mp[4mh[24m[4mh[4mS[24m[4mS[4mm[24m[4mm[4ma[24m[4ma[4ml[24m[4ml[4ml[24m[4ml[4m1[24m[4m1[4m.[24m[4m.[4mi[24m[4mi[4mn[24m[?1l>[?2004l
+]2;input/graphSmall1.in]1;input/graphSmall1.inzsh: permission denied: input/graphSmall1.in
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                ]2;giorgi@Giorgis-MacBook-Air: ~/GitHub/AlgorithmsGraph]1;..gorithmsGraph[0m[27m[24m[J[39m[0m[49m[40m [93mgiorgi@Giorgis-MacBook-Air [44m[30m [30m~/GitHub/AlgorithmsGraph [42m[34m [30m master ? [49m[32m[39m [K[175C[39m[0m[49m[31m[39m[41m[38;5;226m 126 [38;5;226m↵[39m [39m[38;5;244m[39m[48;5;244m[30m 6825 [39m[37m[39m[47m[30m 23:35:11 [39m[00m[49m[201D[?1h=[?2004h[4minput/graphSmall1.in[24m[20D[24m[32mp[24m[32my[24m[32mt[24m[32mh[24m[32mo[24m[32mn[24m[32m3[39m[24m [4md[4mr[4mi[4mv[4me[4mr[4m.[4mp[4my[24m[24m [24m [24m [?1l>[?2004l
+]2;python3 driver.py]1;python3Enter the name of your file (Must be present in current directory): om  input/graphSmall1.in
+Read 10 cities and 13 edges
+ Connected Component 1 :
+     Richmond,IN
+     Muncie,IN
+     Chicago,IL
+     Dayton,OH
+     Anderson,IN
+     Oxford,OH
+     Indianapolis,IN
+     Fort_Wayne,IN
+     Cincinnati,OH
+     Bloomington,IN
+Graph contains a cycle
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                ]2;giorgi@Giorgis-MacBook-Air: ~/GitHub/AlgorithmsGraph]1;..gorithmsGraph[0m[27m[24m[J[39m[0m[49m[40m [93mgiorgi@Giorgis-MacBook-Air [44m[30m [30m~/GitHub/AlgorithmsGraph [42m[34m [30m master ? [49m[32m[39m [K[179C[39m[0m[49m[30m[39m[40m[38;5;46m [38;5;46m✓[39m [39m[38;5;244m[39m[48;5;244m[30m 6826 [39m[37m[39m[47m[30m 23:35:21 [39m[00m[49m[201D[?1h=[?2004h[32mpython3[39m [4mdriver.py[24m[?1l>[?2004l
+]2;python3 driver.py]1;python3Enter the name of your file (Must be present in current directory): o input/graphSmall3.in
+Read 20 cities and 19 edges
+ Connected Component 1 :
+     Baltimore,MD
+     Atlantic_City,NJ
+     Columbus,OH
+     Corpus_Christi,TX
+     Cincinnati,OH
+     Cleveland,OH
+     Bucks_County,PA
+     Austin,Texas
+     Annapolis,MD
+     Brooklyn,NY
+     Charlotte,NC
+     Buffalo,NY
+     Colorado_Springs,CO
+     Bergan_County,NJ
+     Atlanta,GA,
+     Albuquerque,NM
+ Connected Component 2 :
+     Bronx,NY
+     Cape_May_County,NJ
+     Hartford,CT
+     Boston,MA
+Graph contains a cycle
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                ]2;giorgi@Giorgis-MacBook-Air: ~/GitHub/AlgorithmsGraph]1;..gorithmsGraph[0m[27m[24m[J[39m[0m[49m[40m [93mgiorgi@Giorgis-MacBook-Air [44m[30m [30m~/GitHub/AlgorithmsGraph [42m[34m [30m master ? [49m[32m[39m [K[179C[39m[0m[49m[30m[39m[40m[38;5;46m [38;5;46m✓[39m [39m[38;5;244m[39m[48;5;244m[30m 6826 [39m[37m[39m[47m[30m 23:35:28 [39m[00m[49m[201D[?1h=[?2004h[4me[24m[90mxit[39m[24m[32me[32mx[39m[1m[31me[1m[31mx[1m[31mi[0m[39m[0m[32me[0m[32mx[0m[32mi[32mt[39m[?1l>[?2004l
+]2;exit]1;exit
+Script done on Mon Dec 11 23:35:33 2017
