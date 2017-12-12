@@ -1,7 +1,7 @@
-from stack import Stack
 from node import Node
 from edge import Edge
 from graph import Graph
+from stack import Stack
 
 
 def dfs (v, visited):
