@@ -1,108 +1,8 @@
-class Graph:
+from stack import Stack
+from node import Node
+from edge import Edge
+from graph import Graph
 
-	def __init__(self):
-		self.nodeList = []
-
-	def insertNode(self, name, index):
-	#Inserting a node by adding it to the primary node list. 
-		node = Graph.Node(name, index)
-		self.nodeList.append(node)
-		return node 
-
-	def searchCity(self, name):
-	#Check if a city is already present in the node list, otherwise add it in.
-		list_length = len(self.nodeList) 
-		for i in range (list_length):
-			if self.nodeList[i].name() == name:
-				return i 
-		insertNode(name, list_length)
-		return (list_length)
-
-	
-	def showGraph(self):
-	#Test function to see if ADTs are functional (matching with given output files). 
-		counter = 0
-		for node in self.nodeList:
-			print ("Node:", node.index(), " ",  "Name:", node.name()) 
-			for edge in node.adjacent():
-				counter +=1
-				print ("Edge:", edge.otherend(node))
-		print ("Cities: ", (len(self.nodeList)))
-		print ("Edges: ", counter//2)
-
-
-	class Edge: 
-		# The initialization function for the Edge ADT. 
-		def __init__(self, origin, destination, x):
-			self._origin = origin 
-			self._destination = destination 
-			self._element = x 
-
-		# The other-end function for the Edge ADT. 
-		def otherend(self, destination): 
-			return self._destination.index() 
-
-		def destination(self):
-			return self._destination
-
-		def source(self):
-			return self._origin
-
-		# Returns a pointer to the next edge. 
-		def pointer(self):
-			return self._element
-
-	class Node:
-		#Initialization of the Node ADT. 
-		def __init__(self, name, index=None):
-			self._index = index 
-			self._name = name 
-			self._adjacent = [] 
-			self._pointer = None
-
-		#Selector Functions to return the value of each data field. 
-		def index(self):
-			return self._index 
-
-		def name(self):
-			return self._name 
-
-		def adjacent(self):
-			return self._adjacent[::-1]
-
-		#First edge function that returns a pointer/refernece to the first edge in a list of adjacent nodes. 
-		def firstEdge(self):
-			return self._adjacent[0]
-
-		#Inserting an edge. 
-		def addEdge(self, origin, destination, element=None):
-			e = Graph.Edge(origin, destination, element)
-			self._adjacent.append(e)
-
-# def dfs(node, visited):
-# 	visited.append(node)
-# 	adjacencyList = node.adjacent()
-# 	next_node = visitedHelper(adjacencyList, visited, 0)
-# 	print (next_node.name())
-# 	dfs(next_node, visited)
-
-# def visitedHelper(list1, list2, i):
-# 	i = i 
-# 	if i <= (len(list1)):
-# 		if list1[i] in list2:
-# 			print (i)
-# 			i+=1
-# 			visitedHelper(list1, list2, i)
-# 		else:
-# 			return list1[i].destination()
-
-# def dfs(v, l1):
-# 	if v.destination() not in visited:
-# 		visited.append(v.destination())
-# 		dfs(v.destination().firstEdge(), visited)
-# 	v = v.pointer()
-# 	if v != None:
-# 		dfs(v, visited)
 
 def dfs (v, visited):
 	if len(visited) == 0:
@@ -116,58 +16,8 @@ def dfs (v, visited):
 				dfs(i, visited)
 	return visited
 
-comps = {}
-count = 0
-dfsList = []	
 
-def connected(graph, visList):
-	
-	newList = []
-
-	# if len(visList) == len(graph.nodeList()):
-	# 	return comps
-	# else:	
-	for node in graph.nodeList:
-		if node not in visList:
-			newList.append(node)
-
-	if len(newList) == 0:
-		return comps
-	else:
-		count+=1
-		dfsList = dfs(newList[0].firstEdge(), [])
-		connected(graph, dfsList)
-
-
-	# dfs(newList[0].firstEdge(), visList)
-	# if len(newList) != 0:
-	# 	connected(graph, dfsList)
-	# else:
-	# 	dfsList = dfs(newList[0].firstEdge(), visList)
-	# return comps	
-
-# def dfsUtil(node):
-
-
-# 	start = graph.index(0)
-# 	stack = [start]
-# 	while stack:
-# 		node = stack.pop()
-# 		if node not in visited:
-# 			visited.add(node)
-# 			stack.push
-
-
-
-#     visited, stack = set(), [start]
-#     while stack:
-#         vertex = stack.pop()
-#         if vertex not in visited:
-#             visited.add(vertex)
-#             stack.extend(graph[vertex] - visited)
-#     return visited
-
-def testFunction1():
+def graphBuilder():
 	filename = input("Enter the name of your file (Must be present in current directory): ")
 	file = open(filename)
 	myGraph = Graph()
@@ -194,47 +44,84 @@ def testFunction1():
 		myGraph.nodeList[origin_index].addEdge(myGraph.nodeList[origin_index], myGraph.nodeList[destination_index])
 	return myGraph
 
+def cyclicDFS(graph, start):
+	vertexList, edgeList = graph
+	visitedVertex = []
+	stack = [start]
+	adjacencyList = [[] for vertex in vertexList]
+	
+	for edge in edgeList:
+		adjacencyList[edge[0]].append(edge[1])
+		
+	while stack:
+		current = stack.pop()
+		for neighbor in adjacencyList[current]:
+			if not neighbor in visitedVertex:
+				stack.append(neighbor)
+		visitedVertex.append(current)
+	return visitedVertex
+
+def checkCyclic(graph):
+
+	for i in graph.getNodes():
+		vertexList.append(i.index())
+		for j in i.adjacent():
+			edgeList.append((j.source().index(), j.destination().index()))
+
+	all_visited = cyclicDFS(graphs, 0)
+
+	return isRepeated(all_visited)
+
+def isRepeated(c):
+	myset = set()
+	for i in c:
+		lst = len(myset)
+		myset.add(i)
+		if len(myset) == lst:
+			return "Graph contains a cycle"
+	return "Graph does not contain a cycle"
+
+
+def showComps(graph, c_c):
+	nameList = graph.nodeList
+	while len(nameList) != 0:
+		visited = dfs(nameList[0].firstEdge(), [])
+		c_c += 1
+		connected[c_c] = visited
+		for i in visited:
+			if i in nameList:
+				nameList.remove(i)
+	
+	for key,value in connected.items():
+		print (" Connected Component", key,":")
+		for j in value:
+			print ("    ",j.name())
+
+
+
 if __name__ == "__main__":
-	g = testFunction1()
-	g.showGraph()
-	#print (dfs(g,0))
-	adjacentList = g.nodeList[1].adjacent()
-	print (connected(g,[]))
+	
 
-	# for i in myList:
-	# 	print(i.name())
+	myGraph = graphBuilder()
 
-	# for i in adjacentList:
-	# 	print (i.source().firstEdge(), i.destination().firstEdge())
-	# for i in traversal:
-	# 	print (i.source().name(), i.destination.name())
+	# Global variables for connected components
+	visited = []
+	connected = {}         
+	connectedComp = 0
+	cityList = []
 
-	# visited = []
-	# connected = {}         
-	# connected_component = 0
-	# # keeping track of connected components by implementing DFS
-	# for u in g.nodeList():
-	# 	if u not in visited:
-	# 		connected_component += 1 # component number
-	# 		connected[connected_component] = [u.name()] # component list
-	# 		visited.append(u)
-	# 		dfs(u.firstEdge())
-	# print (connected_component)
+	# Global variables for cyclic
+	vertexList = []
+	edgeList = []
+	graphs = (vertexList, edgeList)
+
+	# g.showGraph()
+
+	cyclic = checkCyclic(myGraph)
 
 
+	print("Read", myGraph.numCities() ,"cities and", myGraph.numEdges() ,"edges")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	showComps(myGraph, connectedComp)
+	
+	print(cyclic)
